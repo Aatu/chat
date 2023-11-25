@@ -9,6 +9,9 @@ interface Props {
   children?: ReactNode;
 }
 
+/**
+ * I took this from one hobby project of mine. Because its cool:3
+ */
 export const Display: React.FC<Props> = ({
   className,
   color = "#333224",

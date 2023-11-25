@@ -28,7 +28,7 @@ export const ChatMessage: React.FC<{ message: IChatMessage }> = ({
     case ChatMessageType.SEND:
       return (
         <div>
-          <BoldText as="div">{`${time} ${message.username}:`}</BoldText>
+          <BoldText>{`${time} ${message.username}: `}</BoldText>
           <Text>{(message as IChatMessageSend).message}</Text>
         </div>
       );

@@ -1,6 +1,6 @@
 # Chat assignement for a job application
 
-This is a demo project for a job application. This was made in one day. Do not expect the quality and scope to reflect more than one day worth of work.
+This is a demo project for a job application. Took one work day to make. Scope and quality reflects time constraint. Sorry about that:3
 
 ## Technologies used
 
