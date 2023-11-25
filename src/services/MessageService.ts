@@ -113,7 +113,7 @@ export class MessageService {
         this.usersInChat[Math.floor(Math.random() * this.usersInChat.length)];
       if (user === this.currentUser) return;
 
-      this.sendMessage("Lorem ipsum whatever", user);
+      this.sendMessage("Lorem ipsum", user);
     }
   }
 }
