@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const baseStyle = css`
-  font-family: "arcade-classic";
+  font-family: "Courier New", monospace;
   color: green;
 `;
 

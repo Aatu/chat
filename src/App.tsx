@@ -23,11 +23,6 @@ const Container = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'arcade-classic';
-    src: local('arcade-classic'), url(/ARCADECLASSIC.TTF) format('truetype');
-  }
-
   body {
     background-color: black;
     margin: 0;
