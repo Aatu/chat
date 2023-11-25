@@ -81,7 +81,7 @@ const Container = styled.div`
 const ChatRoomContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 100%;
   width: calc(100% - 300px);
   overflow: hidden;
@@ -92,6 +92,7 @@ const MessageContainer = styled.div`
   flex-direction: column;
   overflow-y: scroll;
   width: calc(100% + 20px);
+  margin-bottom: 5px;
 `;
 
 const UserContainer = styled.div`
