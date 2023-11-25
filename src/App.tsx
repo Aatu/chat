@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styled, { createGlobalStyle } from "styled-components";
+import { Display } from "./components/Display";
+import { Chat } from "./components/chat/Chat";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App: React.FC = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <GlobalStyle />
+      <Container>
+        <Display>
+          <Chat />
+        </Display>
+      </Container>
     </>
-  )
-}
+  );
+};
 
-export default App
+const Container = styled.div`
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+`;
+
+const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'arcade-classic';
+    src: local('arcade-classic'), url(/ARCADECLASSIC.TTF) format('truetype');
+  }
+
+  body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+`;
